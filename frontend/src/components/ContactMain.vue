@@ -19,7 +19,7 @@ Kirim Email
 300">Instagram</a>
 
 </div>
-<p class="text-gray-500">&copy; {{ new Date().getFullYear() }} Rifky Danu Asmoro. Dibuat dengan Hati
+<p class="text-gray-500">&copy; {{ new Date().getFullYear() }} Rifky Danu Asmoro.
 </p>
 </div>
 </footer>

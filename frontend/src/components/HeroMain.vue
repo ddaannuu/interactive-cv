@@ -3,11 +3,16 @@
 <div class="md:w-1/2 mb-10 md:mb-0">
 <h1 class="text-5xl font-bold text-gray-800 mb-4 animate-slide-in-left" style="animation-delay:
 200ms;">
-Halo, Saya <span class="text-blue-600">Rifky Danu Asmoro</span>
+Hi, My Name <span class="text-blue-600">Rifky Danu Asmoro</span>
 </h1>
 <p class="text-xl text-gray-600 mb-8 animate-slide-in-left" style="animation-delay: 400ms;">
-Mahasiswa Teknik Informatika yang bersemangat dalam pengembangan web dan desain
-antarmuka.
+A highly motivated and responsible student at <b>Universitas Amikom Yogyakarta</b> with a strong interest in
+
+Software Engineering and Computer Networking. Passionate about continuous learning and self-
+improvement, with a deep dedication to developing technical skills and problem-solving abilities. Possesses
+
+a strong sense of responsibility and commitment to completing tasks efficiently and effectively. Experienced
+and passionate about internet of things and also has a background in Computer Networking.
 </p>
 
 <a href="#kontak" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-
@@ -18,7 +23,7 @@ Hubungi Saya
 </a>
 </div>
 <div class="md:w-1/2 flex justify-center animate-slide-in-right">
-<img src="..\assets\images\danu.jpg" alt="Foto Profil" class="w-80 h-80 rounded-full
+<img src="..\assets\images\mypictprofile.jpg" alt="Foto Profil" class="w-80 h-80 rounded-full
 object-cover shadow-lg">
 </div>
 </section>

@@ -4,17 +4,17 @@
 <div class="text-2xl font-bold text-gray-800">Rifky Danu Asmoro</div>
 <ul class="flex space-x-6">
 <li><a href="#profil" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Profil</a></li>
+transition-all duration-300">Profile</a></li>
 
 <li><a href="#pendidikan" class="text-gray-600 hover:text-blue-500 transform hover:-translate-
-y-0.5 transition-all duration-300">Pendidikan</a></li>
+y-0.5 transition-all duration-300">Education</a></li>
 
 <li><a href="#skill" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
 transition-all duration-300">Skill</a></li>
 <li><a href="#proyek" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Proyek</a></li>
+transition-all duration-300">Project</a></li>
 <li><a href="#kontak" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Kontak</a></li>
+transition-all duration-300">Contact</a></li>
 </ul>
 </nav>
 </header>
