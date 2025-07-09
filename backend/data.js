@@ -5,51 +5,51 @@ const educationHistory = [
 const skills = [
   {
     name: 'Vue.js',
-    level: 'Mahir',
+    level: 'Novice',
     category: 'Web Development',
     icon: 'vue.webp'
   },
   {
     name: 'JavaScript',
-    level: 'Mahir',
-    category: 'Programming Language',
-    icon: 'js.png'
+    level: 'Novice',
+    category: 'Web Development',
+    icon: 'javascript.webp'
   },
   {
     name: 'Bootstrap',
-    level: 'Mahir',
+    level: 'Novice',
     category: 'Web Development',
     icon: 'bootstrap.png'
   },
   {
-    name: 'Node.js',
-    level: 'Menengah',
-    category: 'Web Development',
-    icon: 'node.png'
-  },
-  {
-    name: 'Express.js',
-    level: 'Menengah',
-    category: 'Web Development',
-    icon: 'express.png'
-  },
-  {
-    name: 'PostgreSQL',
-    level: 'Menengah',
+    name: 'Mysql',
+    level: 'Intermediate',
     category: 'Database',
-    icon: 'postgresql.png'
+    icon: 'mysql.png'
   },
   {
-    name: 'Git & GitHub',
-    level: 'Mahir',
+    name: 'GitHub',
+    level: 'Intermediate',
     category: 'Tools',
-    icon: 'git.png'
+    icon: 'github.png'
   },
   {
     name: 'HTML5 & CSS3',
-    level: 'Mahir',
+    level: 'Intermediate',
     category: 'Web Development',
-    icon: 'html.png'
+    icon: 'html.webp'
+  },
+  {
+    name: 'Arduino',
+    level: 'Intermediate',
+    category: 'Microcontroller',
+    icon: 'arduino.webp'
+  },
+  {
+    name: 'C++',
+    level: 'Intermediate',
+    category: 'Microcontroller',
+    icon: 'cpp.png'
   }
 ]
 
