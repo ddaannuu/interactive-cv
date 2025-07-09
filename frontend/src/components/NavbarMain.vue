@@ -1,21 +1,93 @@
 <template>
-<header class="bg-white shadow-md sticky top-0 z-50 animate-fade-in">
-<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-<div class="text-2xl font-bold text-gray-800">Rifky Danu Asmoro</div>
-<ul class="flex space-x-6">
-<li><a href="#profil" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Profile</a></li>
+  <header
+    :class="[
+      'sticky top-0 z-50 duration-500 transition-all ease-in-out ',
+      isScrolled
+        ? 'bg-[#0f172a]/50 shadow-md backdrop-blur-md'
+        : 'bg-[#0f172a]'
+    ]"
+  >
 
-<li><a href="#pendidikan" class="text-gray-600 hover:text-blue-500 transform hover:-translate-
-y-0.5 transition-all duration-300">Education</a></li>
 
-<li><a href="#skill" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Skill</a></li>
-<li><a href="#proyek" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Project</a></li>
-<li><a href="#kontak" class="text-gray-600 hover:text-blue-500 transform hover:-translate-y-0.5
-transition-all duration-300">Contact</a></li>
-</ul>
-</nav>
-</header>
+    <nav
+      class="container mx-auto px-6 py-4 flex items-center transition-all duration-500"
+      :class="isScrolled ? 'justify-between' : 'justify-center'"
+    >
+      <div v-if="isScrolled">
+        <img
+          src="@/assets/images/mypictprofile.jpg"
+          alt="Foto Profil"
+          class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full object-cover shadow-md"
+        />
+      </div>
+
+      <ul
+        class="flex space-x-6 transition-all duration-500"
+        :class="isScrolled ? 'text-white' : 'text-white'"
+      >
+        <li><a href="#profil" :class="navClass('profil')">Profile</a></li>
+        <li><a href="#pendidikan" :class="navClass('pendidikan')">Education</a></li>
+        <li><a href="#skill" :class="navClass('skillss')">Skill</a></li>
+        <li><a href="#proyek" :class="navClass('proyek')">Project</a></li>
+        <li><a href="#kontak" :class="navClass('kontak')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isScrolled: false,
+      activeSection: ""
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+    this.observeSections();
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.isScrolled = window.scrollY > 10;
+    },
+    observeSections() {
+      const sections = ['profil', 'pendidikan', 'skillss', 'proyek', 'kontak'];
+      const options = { root: null, threshold: 0.6 };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.activeSection = entry.target.id;
+          }
+        });
+      }, options);
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      });
+    },
+    navClass(id) {
+      return [
+        'transition duration-300 hover:text-blue-500 hover:-translate-y-0.5',
+        this.activeSection === id
+          ? 'text-blue-600 font-semibold'
+          : 'text-white'
+      ];
+    }
+  }
+};
+</script>
+
+<style scoped>
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.animate-pulse {
+  animation: blink 2s step-start infinite;
+}
+</style>
