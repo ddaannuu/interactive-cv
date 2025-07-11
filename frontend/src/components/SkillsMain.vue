@@ -59,7 +59,7 @@ function observeSkills() {
 </script>
 
 <template>
-  <section id="sekill" class="py-20 bg-gray-50">
+  <section id="skill" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
       <SectionTitle title="Skills & Expertise" />
 

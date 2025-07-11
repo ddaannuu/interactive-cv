@@ -27,7 +27,7 @@
       >
         <li><a href="#profil" :class="navClass('profil')">Profile</a></li>
         <li><a href="#pendidikan" :class="navClass('pendidikan')">Education</a></li>
-        <li><a href="#skill" :class="navClass('skillss')">Skill</a></li>
+        <li><a href="#skill" :class="navClass('skill')">Skill</a></li>
         <li><a href="#proyek" :class="navClass('proyek')">Project</a></li>
         <li><a href="#kontak" :class="navClass('kontak')">Contact</a></li>
       </ul>
@@ -55,7 +55,7 @@ export default {
       this.isScrolled = window.scrollY > 10;
     },
     observeSections() {
-      const sections = ['profil', 'pendidikan', 'skillss', 'proyek', 'kontak'];
+      const sections = ['profil', 'pendidikan', 'skill', 'proyek', 'kontak'];
       const options = { root: null, threshold: 0.6 };
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

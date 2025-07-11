@@ -57,7 +57,9 @@ const projects = [
     { title: 'Sistem Pendeteksi Kondisi Darurat Ruangan Berbasis Sensor', image: 'microcontroller.jpg',
     description: 'Microcontroller project with NodeMCU', tech: ['C++', 'Arduino',
     ], link: 'https://drive.google.com/file/d/1OZRsl1v1E_7o4FJY1gVn2lezkAvPSJs3/view?usp=sharing' },
-    { title: 'Aplikasi Manajemen Tugas', image: 'https://via.placeholder.com/500x300?text=Proyek+2',
-    description: 'Aplikasi untuk melacak progres tugas harian.', tech: ['React', 'Firebase'], link: '#' }
+    { title: 'Aplikasi Console Vending Machine', image: 'vendingmachine.png',
+    description: 'Aplikasi Console yang menirukan konsep Vending Machine', tech: ['C++'], link: 'https://drive.google.com/file/d/1F7Dyt187i9rydVHEsDNjKd2q_AeFrQnX/view?usp=sharing' },
+    { title: 'Website Technologia', image: 'technologia.png',
+    description: 'Website untuk merekomendasikan produk Laptop', tech: ['Vue JS', 'CI3', 'Bootstrap'], link: 'https://drive.google.com/file/d/1DcNBKxG3CICF9L98av16vOIKj_25u99z/view?usp=sharing' }
 ];
 module.exports = { educationHistory, skills, projects };
