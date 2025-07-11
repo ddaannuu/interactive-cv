@@ -5,6 +5,10 @@
         {
             "source": "/api/:path*",
             "destination": "/backend/index.js"
+        },
+        {
+            "source": "/((?!api/|.*\\..*).*)",
+            "destination": "/index.html"
         }
 
     ]
